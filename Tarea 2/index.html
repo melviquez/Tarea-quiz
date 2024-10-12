@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Preguntas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="pantalla" id="inicio">
+        <h1>Bienvenido al Juego</h1>
+        <p>Haz clic en el botón para comenzar.</p>
+        <button id="comenzar-btn">Comenzar</button>
+    </div>
+
+    <div class="pantalla ocultar" id="preguntas">
+        <div id="temporizador">Tiempo restante: <span id="tiempo">10</span> segundos</div>
+        <div id="pregunta-texto">Aquí va la pregunta</div>
+        <ul id="opciones-lista">
+            <li class="opcion">Opción 1</li>
+            <li class="opcion">Opción 2</li>
+            <li class="opcion">Opción 3</li>
+            <li class="opcion">Opción 4</li>
+        </ul>
+        <div class="retroalimentacion"></div>
+        <div class="respuesta-correcta ocultar"></div>
+        <button id="siguiente-btn" class="ocultar">Siguiente</button>
+    </div>
+
+    <div class="pantalla ocultar" id="resultados">
+        <h2>Resultados</h2>
+        <p id="mensaje-final">¡Has terminado el juego!</p>
+        <p>Respuestas correctas: <span id="correctas">0</span></p>
+        <p>Respuestas incorrectas: <span id="incorrectas">0</span></p>
+        <button id="reiniciar-btn">Reiniciar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
